@@ -1,0 +1,23 @@
+{
+  "name": "bike-crawler",
+  "version": "1.0.0",
+  "description": "Web crawler to index bike models from manufacturers websites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsteffensen/bike-crawler.git"
+  },
+  "author": "jsteffensen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsteffensen/bike-crawler/issues"
+  },
+  "homepage": "https://github.com/jsteffensen/bike-crawler#readme",
+  "dependencies": {
+    "bl": "^6.0.0",
+    "node-html-parser": "^6.1.4"
+  }
+}
