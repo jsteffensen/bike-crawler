@@ -12,15 +12,16 @@ https://www.orbea.com/us-en/
 https://www.bmc-switzerland.com/us_en/
 */
 
-const puppeteer = require('puppeteer')
+const puppeteer = require('puppeteer');
+
 async function scrape() {
-    const browser = await puppeteer.launch({});
+    const browser = await puppeteer.launch({'headless':false});
     const page = await browser.newPage();
 
-    await page.goto('https://www.scott-sports.com/us/en/products/bike-bikes-road-gravel-cx');
-    var element = await page.waitForSelector('div#content');
-    var text = await page.evaluate(element => element.textContent, element);
-    console.log(text);
+    await page.goto('https://www.scott-sports.com/dk/en/products/bike-bikes-road-gravel-cx');
+    //var element = await page.waitForSelector('div#content');
+    //var text = await page.evaluate(element => element.textContent, element);
+    console.log(page.content());
     browser.close();
 }
 
